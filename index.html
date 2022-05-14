@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <h1 class="title">Where's Sally?</h1>
+      <p class="how2play">
+        Sally and her sisters have been playing hide and seek, can you find them
+        all before time is up?
+      </p>
+
+      <div class="items">
+        <img class="sally snake_toShow" src="images/sally.png" />
+        <img class="sally snake_toShow" src="images/sally.png" />
+        <img class="sally snake_toShow" src="images/sally.png" />
+        <br /><img class="sally snake_toShow" src="images/sally.png" />
+        <img class="sally snake_toShow" src="images/sally.png" />
+        <img class="sally snake_toShow" src="images/sally.png" />
+      </div>
+      <div class="display-buttons">
+        <button class="start">Start Game</button>
+        <h3 class="timer">2 minutes<span id="time-left"></span></h3>
+        <button class="reset">Reset Game</button>
+      </div>
+      <div class="main-container">
+        <!-- main background image -->
+        <img class="main-image" src="images/background.png" />
+
+        <!-- objects to find -->
+        <img class="object1 snake_toFind" src="images/object1.png" />
+        <img class="object2 snake_toFind" src="images/object2.png" />
+        <img class="object3 snake_toFind" src="images/object3.png" />
+        <img class="object4 snake_toFind" src="images/object4.png" />
+        <img class="object5 snake_toFind" src="images/object5.png" />
+        <img class="object6 snake_toFind" src="images/object6.png" />
+      </div>
+
+      <!-- check boxes -->
+      <div>
+        <input
+          type="checkbox"
+          class="snakecheckbox_one"
+          id="checkbox1"
+          name="object1"
+          value=" "
+        />
+        <label for="object1"></label>
+
+        <input
+          type="checkbox"
+          class="snakecheckbox_two"
+          id="checkbox2"
+          value=""
+        />
+        <label for="object2"></label>
+
+        <input
+          type="checkbox"
+          class="snakecheckbox_three"
+          id="checkbox3"
+          value=""
+        />
+        <label for="object3"></label>
+
+        <input
+          type="checkbox"
+          class="snakecheckbox_four"
+          id="checkbox4"
+          value=""
+        />
+        <label for="object4"></label>
+
+        <input
+          type="checkbox"
+          class="snakecheckbox_five"
+          id="checkbox5"
+          value=""
+        />
+        <label for="object5"></label>
+
+        <input
+          type="checkbox"
+          class="snakecheckbox_six"
+          id="checkbox6"
+          value=""
+        />
+        <label for="object6"></label>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

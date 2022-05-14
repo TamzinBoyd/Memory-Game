@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@100;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* styling of the main game */
+
+body {
+  background-color: #101628;
+}
+.background {
+  padding: 20px;
+}
+
+.title {
+  font-family: "Bangers", cursive;
+  text-align: center;
+  margin: 10px;
+  font-size: 2.5em;
+  color: #fe5541;
+  text-shadow: 2px 2px black;
+}
+
+.how2play {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 20px;
+  color: white;
+}
+
+.display-buttons {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+/* display timer & start button */
+
+.timer {
+  width: 250px;
+  height: 30px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  padding-top: 8px;
+  border-radius: 10px;
+  border: 2px solid #fe5541;
+  background-color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
+.start,
+.reset {
+  width: 250px;
+  height: 40px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fe5541;
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* styling objects */
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.sally {
+  max-width: 100px;
+  opacity: 0.4;
+}
+
+/* main section of game */
+
+.main-container {
+  position: relative;
+  width: 350px;
+  height: 700px;
+  z-index: -1;
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0;
+}
+
+/* styling of the background image */
+.main-image {
+  position: absolute;
+  float: left;
+  z-index: -1;
+  width: 350px;
+}
+
+/* styling of the hidden objects */
+
+.object1,
+.object2,
+.object3,
+.object4,
+.object5,
+.object6 {
+  position: absolute;
+  width: 350px;
+  float: left;
+  z-index: -1;
+}
+
+/* /* checkbox styling */
+#checkbox1 {
+  width: 35px;
+  height: 35px;
+
+  margin-left: 265px;
+  margin-top: -690px;
+  position: absolute;
+  float: left;
+  z-index: 3;
+  opacity: 0;
+}
+
+#checkbox2 {
+  width: 40px;
+  height: 40px;
+
+  margin-left: 60px;
+  margin-top: -500px;
+  position: absolute;
+  float: left;
+  z-index: 3;
+  opacity: 0;
+}
+
+#checkbox3 {
+  width: 40px;
+  height: 40px;
+
+  margin-left: 260px;
+  margin-top: -365px;
+  position: absolute;
+  float: left;
+  z-index: 3;
+  opacity: 0;
+}
+
+#checkbox4 {
+  width: 50px;
+  height: 50px;
+
+  margin-left: 100px;
+  margin-top: -220px;
+  position: absolute;
+  float: left;
+  z-index: 3;
+  opacity: 0;
+}
+
+#checkbox5 {
+  width: 40px;
+  height: 40px;
+
+  margin-left: 280px;
+  margin-top: -75px;
+  position: absolute;
+  float: left;
+  z-index: 3;
+  opacity: 0;
+}
+
+#checkbox6 {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: -95px;
+
+  position: absolute;
+  /* float: left; */
+  z-index: 3;
+  opacity: 0;
+}
+
+/* class to hide element after being clicked */
+.hide {
+  display: none;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media screen and (min-width: 500px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .display-buttons {
+    display: flex;
+  }
+  .start,
+  .reset {
+    margin: auto;
+  }
+
+  .timer {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #checkbox1 {
+    margin-left: 80px;
+  }
+
+  #checkbox2 {
+    margin-left: -115px;
+  }
+
+  #checkbox3 {
+    margin-left: 80px;
+  }
+
+  #checkbox4 {
+    margin-left: -85px;
+  }
+
+  #checkbox5 {
+    margin-left: 95px;
+  }
+
+  #checkbox6 {
+    margin-left: -115px;
+  }
+}
