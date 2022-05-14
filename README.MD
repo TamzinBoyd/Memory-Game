@@ -1,10 +1,10 @@
 PROJECT BRIEF
 
-First game project to create an interactive game using HTML, CSS & JAVASCRIPT.
+Create an interactive game using HTML, CSS & JAVASCRIPT.
 
 THE GAME
 
-This was our first Javescript game challenge. I wanted to attempt something that was a bit different and decided on a missing item game where the user finds the hidden snakes. Targeted more towards childen.
+This was our first Javascript game challenge. I wanted to attempt something that was a bit different and decided on a missing item game where the user finds the hidden snakes. Targeted more towards children.
 
 BREAKING IT DOWN
 
@@ -19,9 +19,7 @@ MY APPROACH
 
 Firstly I played around with basic functions to practise layering elements. I knew that on click I would need to hide an element. In this case PNG file types met this functionality.
 
-I decided on the same snake character. I opted for a checkbox in the same location as the hidden item and set opacity to 0.
-
-Created a click event to the checkboxes which added a class to change the display to "none", therefore hiding the element. Even if user clicked again it won't reappear.
+I opted for a checkbox in the same location as the hidden item and set opacity to 0 so it wasn't visible to the player. Then created a click event on the checkboxes which added a class to change the display to "none", therefore hiding the element. Even if user clicked again it won't reappear.
 
 Once happy with the core functionality it was time for the design. I opted for a cartoon style image, targeted more at children. I created a variety of pet illustrations using Affinity Photo.
 
